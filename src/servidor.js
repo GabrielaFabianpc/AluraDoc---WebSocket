@@ -19,6 +19,4 @@ servidorHttp.listen(port, () => {
 
 const io = new Server(servidorHttp); //io disponibiliza metodos do socket pra utilizarmos no desenvolvimento
 
-io.on("connection", () => {
-  console.log("Um cliente se conectou!");
-});
+export default io;
